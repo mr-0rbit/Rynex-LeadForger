@@ -1,0 +1,214 @@
+{
+  "config_version": 2,
+  "company": {
+    "name": "Rynex Security",
+    "website": "https://rynexsecurity.com",
+    "linkedin": "https://www.linkedin.com/company/rynex-security",
+    "instagram": "https://www.instagram.com/rynex.sec",
+    "sender_name": "Ayesha Malik",
+    "sender_title": "Business Development",
+    "postal_address": "Rynex Security, Tech Hub, Karachi, Pakistan",
+    "booking_link": ""
+  },
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "security": "starttls",
+    "username": "info@rynexsecurity.com",
+    "password": "",
+    "from_email": "info@rynexsecurity.com",
+    "reply_to": ""
+  },
+  "imap": {
+    "host": "imap.gmail.com",
+    "port": 993,
+    "username": "",
+    "password": "",
+    "folder": "INBOX",
+    "lookback_days": 30
+  },
+  "discovery": {
+    "industries": [
+      "software house",
+      "fintech",
+      "e-commerce",
+      "healthcare",
+      "bank",
+      "telecom",
+      "logistics",
+      "education technology",
+      "managed IT services",
+      "real estate technology"
+    ],
+    "locations": [
+      "Karachi",
+      "Lahore",
+      "Islamabad",
+      "Dubai",
+      "Riyadh"
+    ],
+    "query_templates": [
+      "{industry} company in {location}",
+      "{industry} {location} contact us email"
+    ],
+    "priority_industries": [
+      "fintech",
+      "bank",
+      "health",
+      "e-commerce",
+      "software",
+      "payment",
+      "telecom"
+    ],
+    "max_queries_per_run": 8,
+    "results_per_query": 15,
+    "max_new_leads_per_run": 40,
+    "requery_after_days": 30,
+    "pause_discovery_if_backlog_over": 150,
+    "google_places_api_key": "",
+    "request_delay_seconds": [
+      1.5,
+      3.5
+    ],
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) RynexLeadBot/1.0 (+https://rynexsecurity.com)",
+    "extra_blocked_domains": []
+  },
+  "signals": {
+    "enabled": true,
+    "search_news": true,
+    "search_jobs": true,
+    "search_employees": true,
+    "only_for_leads_with_email": true,
+    "hint_max_age_days": 365,
+    "search_delay_seconds": [
+      2,
+      4
+    ],
+    "cite_incident_news": false
+  },
+  "sending": {
+    "daily_limit": 25,
+    "delay_between_emails_seconds": [
+      60,
+      150
+    ],
+    "min_lead_score": 40,
+    "followup_days": [
+      3,
+      7,
+      14
+    ],
+    "send_window": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "start_hour": 10,
+      "end_hour": 16
+    }
+  },
+  "automation": {
+    "cycle_hours": 6,
+    "notify_email": ""
+  },
+  "email_template_file": "email_template.html",
+  "compliance": {
+    "footer": "You are receiving this one-to-one business email because {company} is publicly listed as a business at {domain}. If you would rather not hear from us, just reply \"unsubscribe\" and we will remove you immediately.\n{sender_company} | {postal_address}"
+  },
+  "services": {
+    "vapt": {
+      "label": "VAPT",
+      "phrase": "penetration testing",
+      "subject": "Penetration testing for {company}",
+      "offer": "Rynex Security runs real-world attack simulations (VAPT) against web apps, APIs, networks and cloud environments, so weaknesses are found and fixed before an attacker finds them.",
+      "deliverable": "You get a clear, prioritised report your developers can act on straight away, with evidence for every finding and retesting to confirm the fixes.",
+      "checklist": "exposed admin panels and forgotten subdomains, weak authentication and broken access control, misconfigured cloud storage, and unpatched internet-facing software"
+    },
+    "soc": {
+      "label": "SOC",
+      "phrase": "24/7 security monitoring",
+      "subject": "24/7 security monitoring for {company}",
+      "offer": "Our Security Operations Center provides continuous monitoring, threat detection and rapid incident response, so suspicious activity is spotted and contained in minutes rather than days.",
+      "deliverable": "That means alerts triaged by certified analysts, clear escalation, and proactive threat hunting, without the cost of building a full in-house SOC.",
+      "checklist": "which log sources are actually monitored, how quickly an alert reaches a human, whether there is a tested incident-response playbook, and whether endpoints and cloud accounts are covered"
+    },
+    "grc": {
+      "label": "GRC",
+      "phrase": "compliance readiness",
+      "subject": "Compliance readiness for {company}",
+      "offer": "Our GRC team helps organisations align with standards such as ISO 27001, PCI DSS and SOC 2, and manage risk in a way that produces real audit evidence, not just paperwork.",
+      "deliverable": "We start with a gap assessment, then give you a practical roadmap covering policies, controls and evidence collection.",
+      "checklist": "scope and asset inventory, risk assessment, access-control and logging evidence, vendor risk, and incident-response documentation"
+    },
+    "audits": {
+      "label": "Security Audits",
+      "phrase": "independent security audit",
+      "subject": "Independent security audit for {company}",
+      "offer": "Rynex Security conducts comprehensive third-party Security Audits covering cloud infrastructure, network architectures, and IAM access controls to identify hidden security gaps.",
+      "deliverable": "You receive a prioritized, executive-ready technical audit report detailing architectural weaknesses, cloud misconfigurations, and an actionable remediation roadmap.",
+      "checklist": "cloud IAM permissions, exposed storage buckets, perimeter security configurations, database encryption, and vendor access"
+    },
+    "trainings": {
+      "label": "Cyber Security Trainings",
+      "phrase": "cyber security awareness training",
+      "subject": "Cyber security awareness & phishing training for {company}",
+      "offer": "Rynex Security provides interactive Cyber Security Awareness Training and simulated phishing exercises designed to turn your employees into a human firewall against social engineering.",
+      "deliverable": "Your team gets realistic simulated phishing campaigns, benchmark risk scores, and role-based training modules that reduce employee click rates.",
+      "checklist": "phishing simulation resilience, credential protection habits, secure remote work hygiene, and incident reporting speed"
+    },
+    "general": {
+      "label": "General security",
+      "phrase": "security testing and monitoring",
+      "subject": "Quick question about security at {company}",
+      "offer": "Rynex Security helps organisations find and fix real security weaknesses before attackers do, through penetration testing (VAPT), 24/7 SOC monitoring and GRC / compliance support.",
+      "deliverable": "You get certified professionals with an offensive-security mindset, a sharp focus on the risks that matter, and clear, actionable reports.",
+      "checklist": "exposed admin panels and forgotten subdomains, weak authentication, misconfigured cloud storage, and unpatched internet-facing software"
+    }
+  },
+  "hooks": {
+    "hiring": "I noticed {company} is hiring for the role of {hint_detail}. That usually means security is becoming a bigger priority, and we often help teams cover the gap while they recruit.",
+    "incident": "I came across public reports of a security incident involving {company}, and I'm sorry you've had to deal with that. When teams are rebuilding trust, an independent review can help confirm nothing was missed.",
+    "compliance": "I saw that {company} has been in the news around compliance and certification ({hint_detail}). Getting audit-ready is much easier with an outside view early on.",
+    "launch": "I saw the recent news about {company} ({hint_detail}). Congratulations! New products and growth are exactly when an independent security review pays off most.",
+    "website_compliance": "{company} references {hint_detail} on its website, so I imagine security assurance matters to your customers.",
+    "industry": "{industry_pitch}"
+  },
+  "size_lines": {
+    "small": "We work with lean teams, so engagements are scoped to fit your size and budget.",
+    "medium": "For a team of your size, we can start with a focused, time-boxed engagement and expand from there.",
+    "large": "For larger environments, we plan around your existing tools and teams so testing and monitoring fit your current processes.",
+    "unknown": ""
+  },
+  "industry_pitches": {
+    "fintech": "For fintech and payment companies, one exploitable flaw in an API or web app can mean exposed customer data and failed audits.",
+    "bank": "For financial institutions, penetration testing, SOC monitoring and regulatory-aligned GRC support need to work together so findings turn into fixes and audit evidence.",
+    "health": "Healthcare organisations hold some of the most sensitive data there is, and their applications and integrations need to be tested the way a real attacker would.",
+    "e-commerce": "For online stores, checkout flows, customer accounts and payment integrations are prime targets for attackers.",
+    "software": "For software teams, web apps, APIs and cloud setups are the main attack surface, and customers increasingly ask for proof of security.",
+    "telecom": "Telecom environments have a large, complex attack surface that benefits from continuous monitoring and regular testing.",
+    "default": "Whether you are preparing for a compliance audit, launching a new product, or simply want to know how an attacker would see your systems, it helps to find the weak spots first."
+  },
+  "templates": {
+    "initial": {
+      "subject": "{subject}",
+      "body": "{greeting}\n\n{hook}\n\n{service_offer} {size_line}\n\n{service_deliverable}\n\n{forward_line}\n\nWould you be open to a short 15-minute call to see whether we can help? {booking_line}\n\nBest regards,\n{sender_name}\n{sender_title}, Rynex Security\n{website}"
+    },
+    "followups": [
+      {
+        "subject": "Following up on {service_phrase} for {company}",
+        "body": "{greeting}\n\nJust following up on my note from a few days ago about {service_phrase}. {service_deliverable}\n\nIf this is on your roadmap, I'd be glad to share how we would approach it for {company}. {booking_line}\n\nBest regards,\n{sender_name}\n{sender_title}, Rynex Security\n{website}"
+      },
+      {
+        "subject": "Common starting points for {company} - {service_phrase}",
+        "body": "{greeting}\n\nCommon starting points when we look at {service_phrase}: {service_checklist}.\n\nHappy to do a quick, no-obligation scoping chat if any of that sounds relevant. {booking_line}\n\nBest regards,\n{sender_name}\n{sender_title}, Rynex Security\n{website}"
+      },
+      {
+        "subject": "Final note regarding {company}",
+        "body": "{greeting}\n\nI don't want to clutter your inbox, so this will be my last message. If the timing isn't right, no problem at all. You can learn more at {website} or reach us any time at {from_email}.\n\nWishing {company} all the best.\n\nBest regards,\n{sender_name}\n{sender_title}, Rynex Security"
+      }
+    ]
+  }
+}

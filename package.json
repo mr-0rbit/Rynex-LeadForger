@@ -1,0 +1,31 @@
+{
+  "name": "rynex-lead-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rynex Technologies - Global Cybersecurity Lead Intelligence & Outreach Platform",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "concurrently -k -n server,client -c cyan,magenta \"node server/index.js\" \"vite\"",
+    "server": "node server/index.js",
+    "client": "vite",
+    "build": "vite build",
+    "seed": "node server/seed.js"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "pdfkit": "^0.15.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.4",
+    "@tanstack/react-table": "^8.21.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "concurrently": "^9.1.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.0",
+    "recharts": "^2.15.3",
+    "tailwindcss": "^4.1.4",
+    "vite": "^6.3.5"
+  }
+}
